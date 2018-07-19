@@ -1,5 +1,5 @@
 var config = {
-  geojson: "http://od.govmu.org/dkan/sites/default/files/pyshp-demo_2.json",
+  geojson: "https://web.fulcrumapp.com/shares/a5c8e07368efde43.geojson",
   title: "Congress Park Trees",
   layerName: "Trees",
   hoverProperty: "species_sim",
