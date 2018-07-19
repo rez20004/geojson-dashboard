@@ -203,8 +203,8 @@ var featureLayer = L.geoJson(null, {
           highlightLayer.addData(featureLayer.getLayer(L.stamp(layer)).toGeoJSON());
         },
         mouseover: function (e) {
-          if (config.hoverProperty) {
-            $(".info-control").html(feature.properties[config.hoverProperty]);
+          if (config.name) {
+            $(".info-control").html(feature.properties[config.name]);
             $(".info-control").show();
           }
         },
