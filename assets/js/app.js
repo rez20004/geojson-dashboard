@@ -1,7 +1,7 @@
 var config = {
-  geojson: "https://web.fulcrumapp.com/shares/a5c8e07368efde43.geojson",
+  geojson: "http://od.govmu.org/dkan/sites/default/files/pyshp-demo_2.json",
   title: "Congress Park Trees",
-  layerName: "Trees",
+  layerName: "District",
   hoverProperty: "species_sim",
   sortProperty: "dbh_2012_inches_diameter_at_breast_height_46",
   sortOrder: "desc"
