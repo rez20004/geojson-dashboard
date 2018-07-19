@@ -2,9 +2,7 @@ var config = {
   geojson: "https://data.govmu.org/dkan/sites/default/files/350-Wifi-Hotspots_1.geojson",
   title: "Mauritius Districts",
   layerName: "District",
-  hoverProperty: "species_sim",
-  sortProperty: "dbh_2012_inches_diameter_at_breast_height_46",
-  sortOrder: "desc"
+  sortOrder: "name"
 };
 
 var properties = [{
