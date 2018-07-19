@@ -1,5 +1,5 @@
 var config = {
-  geojson: "http://od.govmu.org/dkan/sites/default/files/pyshp-demo_2.json",
+  geojson: "http://od.govmu.org/dkan/sites/default/files/350-Wifi-Hotspots.geojson",
   title: "Congress Park Trees",
   layerName: "District",
   hoverProperty: "species_sim",
@@ -8,8 +8,8 @@ var config = {
 };
 
 var properties = [{
-  value: "fulcrum_id",
-  label: "Fulcrum ID",
+  value: "name",
+  label: "name",
   table: {
     visible: false,
     sortable: true
@@ -18,121 +18,9 @@ var properties = [{
     type: "string"
   },
   info: false
-},
-{
-  value: "status",
-  label: "Status",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "string",
-    input: "checkbox",
-    vertical: true,
-    multiple: true,
-    operators: ["in", "not_in", "equal", "not_equal"],
-    values: []
-  }
-},
-{
-  value: "congress_park_inventory_zone",
-  label: "Inventory Zone",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "string",
-    input: "checkbox",
-    vertical: true,
-    multiple: true,
-    operators: ["in", "not_in", "equal", "not_equal"],
-    values: []
-  }
-},
-{
-  value: "2012_inventory_number",
-  label: "Inventory Number",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "integer"
-  }
-},
-{
-  value: "species_sim",
-  label: "Species",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "string"
-  }
-},
-{
-  value: "circumference_2012_inches_at_breast_height_",
-  label: "Circumference (inches)",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "integer"
-  }
-},
-{
-  value: "dbh_2012_inches_diameter_at_breast_height_46",
-  label: "DBH (inches)",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "integer"
-  }
-},
-{
-  value: "plaque",
-  label: "Plaque",
-  table: {
-    visible: true,
-    sortable: true
-  },
-  filter: {
-    type: "string",
-    input: "radio",
-    operators: ["equal"],
-    values: {
-      "yes": "Yes",
-      "no": "No"
-    }
-  }
-},
-{
-  value: "notes_other_information",
-  label: "Notes",
-  table: {
-    visible: false,
-    sortable: true
-  },
-  filter: {
-    type: "string"
-  }
-},
-{
-  value: "photos_url",
-  label: "Photos",
-  table: {
-    visible: true,
-    sortable: true,
-    formatter: urlFormatter
-  },
-  filter: false
-}];
+
+
+  }];
 
 function drawCharts() {
   // Status
