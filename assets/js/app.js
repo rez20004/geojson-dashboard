@@ -1,5 +1,5 @@
 var config = {
-  geojson: "http://od.govmu.org/dkan/sites/default/files/trees_3.geojson",
+  geojson: "http://od.govmu.org/dkan/sites/default/files/trees_4.geojson",
   title: "Congress Park Trees",
   layerName: "Trees",
   hoverProperty: "species_sim",
